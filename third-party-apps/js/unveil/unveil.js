@@ -54,3 +54,4 @@
   };
 
 })(window.jQuery);
+//remove zepto dependency on Jan 6 2016 - Harry
