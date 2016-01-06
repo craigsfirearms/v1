@@ -20,7 +20,7 @@
     </style>
 
     <script>
-    $("li img").unveil(200, function() {
+    $("img").unveil(200, function() {
       $(this).load(function() {
     this.style.opacity = 1;
       });
@@ -51,6 +51,10 @@
 
     <script src="./third-party-apps/js/vendor/jquery.js"></script>
     <script src="./third-party-apps/js/foundation.min.js"></script>
+    <script>
+      //$("img").unveil(200);
+      $("img").trigger("unveil");
+    </script>
     <script>
       $(document).foundation();
     </script>
