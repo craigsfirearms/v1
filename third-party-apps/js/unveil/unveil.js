@@ -53,6 +53,6 @@
 
   };
 
-})(window.jQuery);
+})(window.jQuery||window.Zepto);
 //remove zepto dependency on Jan 6 2016 - Harry
-console.info("%cunveil is on the page","background-color:yellow;");
+//console.info("%cunveil is on the page","background-color:yellow;");
