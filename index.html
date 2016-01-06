@@ -12,12 +12,24 @@
     <script src="./third-party-apps/js/unveil/unveil.js"></script>
     <script src="./js/console.js"></script>
 
+    <style>
+    img {
+      opacity: 0;
+      transition: opacity .3s ease-in;
+    }
+    </style>
+
     <script>
     /*$(function() {
         $("li img").unveil(300);
     });**/
-    $(document).ready(function() {
+    /*$(document).ready(function() {
         $("li img").unveil(10);
+    });**/
+    $("img").unveil(200, function() {
+      $(this).load(function() {
+    this.style.opacity = 1;
+      });
     });
     </script>
 
